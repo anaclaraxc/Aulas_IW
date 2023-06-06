@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graus-Fahrenheit</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #e29ad0 , rgb(194, 68, 156))
+            
+            }
+
+        #container{
+            margin: 0 auto;
+            width: auto;
+            display: table;
+            text-align: center;
+        }
+
+        #convert {
+            margin-top:2%;
+            background-color: rgb(50, 175, 33);
+        }
+        #clear {
+            margin-top:2%;
+            background-color: rgb(255, 0, 0);
+        }
+
+        #convert:hover {
+            background-color: green;
+        }
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000000;
+        }
+
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #000000;
+        }
+
+        input {
+            display: block;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 2em;
+            color: #000000;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+            
+        }
+        ::-webkit-input-placeholder {
+            color: #ccc;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            color: #ccc;  
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            color: #ccc;  
+        }
+        :-ms-input-placeholder {  
+            color: #ccc;  
+        }
+        button {
+            padding: 10px;
+            font-size: 1.2em;
+            color: #ffffff;
+        }
+        img{
+            padding-left: 28%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Conversor De Temperatura</h1>
+
+        <input type="text" id="fahrenheit" placeholder="Fahrenheit" name="f" value="" />
+
+        <input type="text" id="celsius" placeholder="Celsius" name="c" value="" />
+
+        <button id="convert"> Converter </button>
+        <br>
+        <button id="clear"> Resetar </button>
+    </div>
+
+    <figure><img src="img/eteclogo.png" alt=""></figure>
+    <h2> Por: Ana Clara Cordeiro Lima - 2°C</h2>
+
+    <script src="conversor.js"></script>
+</body>
+</html>
